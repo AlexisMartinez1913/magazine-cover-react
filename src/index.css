@@ -1,0 +1,30 @@
+/*Globales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .titulo-principal {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+    
+}
